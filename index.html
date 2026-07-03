@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iTask Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="app-container">
+        <h1>iTask Manager</h1>
+
+        <form id="task-form">
+            <div class="input-group">
+                <label for="task-title">Título da Tarefa:</label>
+                <input type="text" id="task-title" required placeholder="Ex: Estudar TypeScript">
+            </div>
+
+            <div class="input-group">
+                <label for="task-desc">Descrição (Opcional):</label>
+                <textarea id="task-desc" placeholder="Ex: Revisar os conceitos de POO"></textarea>
+            </div>
+
+            <button type="submit" id="btn-add">Adicionar</button>
+        </form>
+
+        <section class="tasks-section">
+            <h2>Minhas Atividades</h2>
+            <div id="tasks-list"></div>
+        </section>
+    </main>
+
+    <script src="app.js" type="module" defer></script>
+</body>
+</html>
