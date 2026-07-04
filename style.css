@@ -1,0 +1,106 @@
+body {
+    font-family: 'Nunito', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.app-container {
+    width: 100%;
+    max-width: 500px;
+    background: #1e1e1e;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+h1, h2 {
+    text-align: center;
+    color: #ffffff;
+}
+
+/* formulario */
+#task-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+input[type="text"], textarea {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #333;
+    background-color: #2a2a2a;
+    color: #fff;
+}
+
+button {
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background-color: #00adb5;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+button:hover {
+    background-color: #007a80;
+}
+
+/* lista de tarefas */
+.task-card {
+    background: #252525;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    border-left: 5px solid #00adb5;
+    transition: all 0.3s ease;
+}
+
+.task-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.task-checkbox {
+    width: 18px;
+    height: 18px;
+    margin-top: 4px;
+    cursor: pointer;
+}
+
+.task-text h3 {
+    margin: 0 0 5px 0;
+}
+
+.task-text p {
+    margin: 0 0 10px 0;
+    color: #aaa;
+}
+
+.task-text small {
+    color: #666;
+}
+
+.task-card.completed {
+    border-left-color: #28a745;
+    opacity: 0.5; 
+}
+
+.task-card.completed .task-text h3,
+.task-card.completed .task-text p {
+    text-decoration: line-through; 
+    color: #666;
+}
